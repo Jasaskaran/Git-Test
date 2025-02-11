@@ -197,9 +197,10 @@ async function clearUsers() {
     });
 }
 
+console.log('Loaded My Script');
 
 // Run the bulk user insertion
-//addLargeNumberOfUsers();
+addLargeNumberOfUsers();
 
 // Add some users
 await addUser({ id: 1111111, name: "Alice", age: 25 });
