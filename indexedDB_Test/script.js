@@ -203,24 +203,24 @@ console.log('Loaded My Script');
 addLargeNumberOfUsers();
 
 // Add some users
-await addUser({ id: 1111111, name: "Alice", age: 25 });
-await addUser({ id: 1111112, name: "Bob", age: 30 });
-await addUser({ id: 1111113, name: "Charlie", age: 22 });
+addUser({ id: 1111111, name: "Alice", age: 25 });
+addUser({ id: 1111112, name: "Bob", age: 30 });
+addUser({ id: 1111113, name: "Charlie", age: 22 });
 
 // Retrieve a single user
-const user = await getUser(1111112);
+const user = getUser(1111112);
 console.log("Retrieved user:", user);
 
 // Retrieve all users
-// const allUsers = await getAllUsers();
+// const allUsers = getAllUsers();
 // console.log("All users:", allUsers);
 
 // Delete a user
-await deleteUser(1111111);
+deleteUser(1111111);
 console.log("User 1111111 deleted");
 
 // Clear all users
-// await clearUsers();
+// clearUsers();
 
 // Example Usage
 getUsers("desc", 10, 0)  // Get first 10 users in descending order
